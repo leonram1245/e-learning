@@ -1,0 +1,10 @@
+%h1
+  Courses:
+  = @courses.count
+
+.d-flex.flex-wrap.container.align-items-stretch 
+  - @courses.each do |course|
+    = render 'course', course:course
+
+
+= link_to 'New Course', new_course_path
