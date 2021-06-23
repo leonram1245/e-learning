@@ -119,10 +119,14 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   config.action_mailer.default_url_options = {host: "edukeyt.herokuapp.com", protocol: "https"}
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: 'a00b7507c33156f7829652168f4952a7-1f1bd6a9-4c50faba',
-    domain: 'gmail.com', 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  domain: ENV['gmail.com'],
+  user_name: ENV['marnoeldeguzman@gmail.com'],
+  password: ENV['leonramdeguzman5'],
+  address: 'smtp.sendgrid.net',
+  port: 465,
+  authentication: :plain,
+  enable_starttls_auto: true
   }
-
 end
