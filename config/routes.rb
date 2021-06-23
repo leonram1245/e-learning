@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'users/index'
+  devise_for :users, controllers:{
+    confirmations: 'confirmations'
+  }
+  resources :users
   resources :courses
   root 'home#index'
   get 'landing_page/index'

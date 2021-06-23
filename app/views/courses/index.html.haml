@@ -1,8 +1,11 @@
 %h1
-  Courses:
-  = @courses.count
+  - if @courses.count == 0
+    No Search Results
+  - else
+    Courses:
+    = @courses.count
 
-.d-flex.flex-wrap.container.align-items-stretch 
+.d-flex.flex-wrap.container
   - @courses.each do |course|
     = render 'course', course:course
 

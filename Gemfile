@@ -29,6 +29,7 @@ gem 'popper_js', '~> 2.9.2'
 gem 'simple_form'
 gem 'faker'
 gem 'devise'
+gem 'friendly_id', '~> 5.4.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do

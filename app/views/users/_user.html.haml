@@ -1,0 +1,18 @@
+.card.col-lg-3.d-flex.align-items-stretch
+  .card-header 
+    .fa.fa-user
+    = user.email 
+    .card-footer 
+    Signed Up 
+    = time_ago_in_words(user.created_at)
+    ago
+    .row
+    = 'User Sign-In Count'.humanize
+    = user.sign_in_count
+    .row
+    = 'User Current Sign-In'.humanize
+    = user.current_sign_in_at 
+    .row
+    = 'User Last Sign-in'.humanize
+    = user.last_sign_in_at
+  

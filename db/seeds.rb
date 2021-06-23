@@ -6,4 +6,4 @@ User.create!(email:'admin@example.com',password:'admin@example.com', password_co
       user_id: User.first.id,
       created_at: DateTime.now
     }])
-  end
+end
