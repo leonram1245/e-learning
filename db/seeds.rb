@@ -1,4 +1,4 @@
-User.create!(email:'admin@example.com',password:'admin@example.com', password_confirmation:'admin@example.com')
+#User.create!(email:'admin@example.com',password:'admin@example.com', password_confirmation:'admin@example.com')
 40.times do
     Course.create!([{
       title: Faker::Educator.course_name,
@@ -7,3 +7,5 @@ User.create!(email:'admin@example.com',password:'admin@example.com', password_co
       created_at: DateTime.now
     }])
 end
+User.skip_confirmation!
+User.save!
