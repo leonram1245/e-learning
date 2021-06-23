@@ -122,9 +122,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   port: 587,
-  address: 'email-smtp.eu-central-1.amazonaws.com',
-  user_name: 'AKIA47AWWDAOFCL2XEC3',
-  password: 'BMqQO3baBiSmbGDDHYuplKbZHX/ktfqwg+ApJl40LS/x',
+  address: 'smtp.mailgun.org',
+  domain: 'edukeyt.herokuapp.com',
+  user_name: 'marnoeldeguzman@gmail.com',
+  password: 'mmdakd1245',
   authentication: :plain,
   enable_starttls_auto: true
   }
