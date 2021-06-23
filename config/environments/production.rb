@@ -128,4 +128,5 @@ Rails.application.configure do
   password: 'BMqQO3baBiSmbGDDHYuplKbZHX/ktfqwg+ApJl40LS/x',
   authentication: :plain,
   enable_starttls_auto: true
+  }
 end
