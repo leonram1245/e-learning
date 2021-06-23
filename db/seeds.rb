@@ -7,5 +7,3 @@
       created_at: DateTime.now
     }])
 end
-User.skip_confirmation!
-User.save!
