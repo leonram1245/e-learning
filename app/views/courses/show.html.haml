@@ -9,6 +9,13 @@
   .card-body
     %p.card-text
     = @course.description
+  .card-footer
+    .fas.fa-globe-asia
+    = @course.language
+    .fas.fa-signal
+    = @course.level
+    .fas.fa-money-check-alt
+    = number_to_currency(@course.price)
   .card-footer.text-muted
     .far.fa-user
     = @course.user

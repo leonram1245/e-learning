@@ -4,7 +4,14 @@
     = link_to course.title, course_path(course)
   .card-body
     %p.card-text
-    = course.description
+    %small= simple_format(course.short_description)
+  .card-footer.text
+    .fas.fa-globe-asia
+    = course.language
+    .fas.fa-signal
+    = course.level
+    .fas.fa-money-check-alt
+    = number_to_currency(course.price)
   .card-footer.text-muted
     .far.fa-user
     = course.user
